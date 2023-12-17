@@ -1,0 +1,6 @@
+﻿services:
+  itinero.api:
+    image: itinero.api
+    build:
+      context: .
+      dockerfile: src/Itinero.API/Dockerfile
