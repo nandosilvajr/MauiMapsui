@@ -18,6 +18,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{D3BC40A3
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Itinero.API", "src\Itinero.API\Itinero.API.csproj", "{78A13E78-C400-4023-87EB-1A6F942CB24E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Itinero.WebAPI", "src\Itinero.WebAPI\Itinero.WebAPI.csproj", "{892922B7-FE47-461B-B211-0D1C96D99479}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MauiMaps", "..\MauiMaps\MauiMaps\MauiMaps.csproj", "{04B726CA-D4EC-4782-9856-2FC2811E0902}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MauiMapsui.Shared", "src\MauiMapsui.Shared\MauiMapsui.Shared.csproj", "{A1DCA6F5-5A9C-4FF8-BD1C-F18B8E4363E7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -28,11 +34,26 @@ Global
 		{78A13E78-C400-4023-87EB-1A6F942CB24E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{78A13E78-C400-4023-87EB-1A6F942CB24E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{78A13E78-C400-4023-87EB-1A6F942CB24E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{892922B7-FE47-461B-B211-0D1C96D99479}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{892922B7-FE47-461B-B211-0D1C96D99479}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{892922B7-FE47-461B-B211-0D1C96D99479}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{892922B7-FE47-461B-B211-0D1C96D99479}.Release|Any CPU.Build.0 = Release|Any CPU
+		{04B726CA-D4EC-4782-9856-2FC2811E0902}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04B726CA-D4EC-4782-9856-2FC2811E0902}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04B726CA-D4EC-4782-9856-2FC2811E0902}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04B726CA-D4EC-4782-9856-2FC2811E0902}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A1DCA6F5-5A9C-4FF8-BD1C-F18B8E4363E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1DCA6F5-5A9C-4FF8-BD1C-F18B8E4363E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1DCA6F5-5A9C-4FF8-BD1C-F18B8E4363E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1DCA6F5-5A9C-4FF8-BD1C-F18B8E4363E7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{78A13E78-C400-4023-87EB-1A6F942CB24E} = {F4F29139-7D03-426D-880C-A539A48CB287}
+		{892922B7-FE47-461B-B211-0D1C96D99479} = {F4F29139-7D03-426D-880C-A539A48CB287}
+		{04B726CA-D4EC-4782-9856-2FC2811E0902} = {F4F29139-7D03-426D-880C-A539A48CB287}
+		{A1DCA6F5-5A9C-4FF8-BD1C-F18B8E4363E7} = {F4F29139-7D03-426D-880C-A539A48CB287}
 	EndGlobalSection
 EndGlobal

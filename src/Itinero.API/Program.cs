@@ -23,6 +23,9 @@
 using System.IO;
 using Microsoft.AspNetCore.Hosting;
 using System;
+using Microsoft.AspNetCore.Builder;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
 
 namespace Itinero.API
 {
@@ -34,15 +37,47 @@ namespace Itinero.API
             {
                 Console.WriteLine(string.Format("[{0}] {1} - {2}", o, level, message));
             };
-
             var host = new WebHostBuilder()
                 .UseKestrel()
                 .UseContentRoot(Directory.GetCurrentDirectory())
                 .UseIISIntegration()
                 .UseStartup<Startup>()
                 .Build();
-
+             
             host.Run();
+            
+            /*var builder = WebApplication.CreateBuilder(args);
+            builder.Services.AddControllers();
+// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
+            builder.Services.AddEndpointsApiExplorer();
+            builder.Services.AddSwaggerGen();
+
+            var app = builder.Build();
+            
+            // Configure the HTTP request pipeline.
+            if (app.Environment.IsDevelopment())
+            {
+                app.UseSwagger();
+                app.UseSwaggerUI();
+            }
+            
+            app.UseRouting();
+
+            
+            app.UseEndpoints(endpoints =>
+            {
+                endpoints.MapControllers(); //Routes for my API controllers
+            });
+
+            app.UseHttpsRedirection();
+
+            app.UseAuthorization();
+
+            app.MapControllers();
+
+            app.Run();*/
+            
+
         }
     }
 }

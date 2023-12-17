@@ -10,6 +10,7 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Threading;
 using System.Threading.Tasks;
 
@@ -109,8 +110,9 @@ namespace Itinero.API
             }
             catch (Exception ex)
             {
+                var loc1 = Assembly.GetExecutingAssembly().Location;
                 Logger.Log("Bootstrapper", TraceEventType.Critical,
-                    "Failed to start service: {0}", ex.ToInvariantString());
+                    "Failed to start service: {0} {1}", ex.ToInvariantString(), loc1);
             }
         }
 

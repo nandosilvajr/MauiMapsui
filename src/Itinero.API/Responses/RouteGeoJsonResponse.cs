@@ -59,12 +59,12 @@ namespace Itinero.API.Reponses
         /// <returns></returns>
         private static Action<Stream> GetGeoJsonContents(Route model)
         {
-            return stream =>
+            return async stream =>
             {
                 var geoJson = model.ToGeoJson();
 
                 var geoJsonBytes = System.Text.Encoding.UTF8.GetBytes(geoJson);
-                stream.Write(geoJsonBytes, 0, geoJsonBytes.Length);
+                await stream.WriteAsync(geoJsonBytes, 0, geoJsonBytes.Length);
             };
         }
     }
